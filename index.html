@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Repair Mobile Mechanic Birmingham - Expert On-Demand Auto Service</title>
+    <meta name="description" content="Car Repair Mobile Mechanic Birmingham offers prompt, professional mobile auto repair services directly to your location in Birmingham, UK. Experience convenience and expertise for all your vehicle needs.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Base Styles & Variables */
+        :root {
+            --primary-color: #1c1c1c;
+            --accent-color: #e63946;
+            --background-color: #f1f1f1;
+            --light-text: #f1f1f1;
+            --dark-text: #1c1c1c;
+            --secondary-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--background-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+
+        h1 { font-size: 2.8em; }
+        h2 { font-size: 2.2em; }
+        h3 { font-size: 1.8em; }
+        h4 { font-size: 1.4em; }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        .section-padding {
+            padding: 4em 1em;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 0.8em 2em;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+
+        .navbar-brand {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--light-text);
+            letter-spacing: 0.05em;
+            flex-shrink: 0; 
+        }
+
+        .navbar-toggle {
+            display: none; 
+            font-size: 1.8em;
+            cursor: pointer;
+            color: var(--light-text);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5em;
+            flex-grow: 1; 
+            justify-content: flex-end; 
+        }
+
+        .nav-links a {
+            color: var(--light-text);
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.95em;
+            position: relative;
+            padding: 0.5em 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/featured/1600x900/?auto,repair,garage') no-repeat center center/cover;
+            color: var(--light-text);
+            text-align: center;
+            padding: 8em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh; 
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: var(--light-text);
+            margin-bottom: 0.3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 2em;
+            color: rgba(241, 241, 241, 0.9);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Services & About Section */
+        .about-services {
+            background-color: var(--background-color);
+            padding: 4em 1em;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            align-items: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5em;
+            margin-top: 3em;
+        }
+
+        .service-card {
+            background-color: var(--secondary-bg);
+            padding: 2em;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card i {
+            font-size: 3em;
+            color: var(--accent-color);
+            margin-bottom: 0.5em;
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.5em;
+            font-size: 1.4em;
+            color: var(--primary-color);
+        }
+
+        /* Certifications */
+        .certifications {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 4em 1em;
+            text-align: center;
+        }
+
+        .certifications h2 {
+            color: var(--light-text);
+            margin-bottom: 1.5em;
+        }
+
+        .certification-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        .certification-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .certification-item i {
+            color: var(--accent-color);
+            font-size: 1.8em;
+            margin-right: 0.8em;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--background-color);
+            padding: 4em 1em;
+        }
+        .gallery h2 {
+            color: var(--primary-color);
+            margin-bottom: 2em;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--secondary-bg);
+            padding: 4em 1em;
+        }
+
+        .features h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+        }
+
+        .feature-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5em;
+            background-color: var(--background-color);
+            padding: 1.5em;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-card i {
+            font-size: 2.5em;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.3em;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            margin-bottom: 0;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background-color: var(--background-color); 
+            padding: 4em 1em;
+        }
+
+        .reviews h2 {
+            margin-bottom: 2em;
+            color: var(--primary-color);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+        }
+
+        .review-card {
+            background-color: var(--secondary-bg);
+            padding: 2em;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px; 
+        }
+
+        .review-card .stars {
+            color: gold;
+            margin-bottom: 0.8em;
+            font-size: 1.2em;
+        }
+
+        .review-card p {
+            font-style: italic;
+            margin-bottom: 1em;
+            line-height: 1.5;
+        }
+
+        .review-card .reviewer-name {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: auto; 
+        }
+
+        /* Contact Section & Form */
+        .contact {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 4em 1em;
+        }
+
+        .contact h2 {
+            color: var(--light-text);
+            margin-bottom: 1.5em;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+        }
+
+        .contact-info p {
+            margin-bottom: 1em;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p i {
+            color: var(--accent-color);
+            margin-right: 1em;
+            font-size: 1.5em;
+            width: 1.5em; 
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--light-text);
+            transition: color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.9;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+            opacity: 1;
+        }
+
+
+        .contact-form {
+            background-color: var(--secondary-bg);
+            padding: 2em;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1.5em;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+            padding: 1.2em 0;
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 2.5em 1em;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+        }
+
+        .footer-nav {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em 1.5em;
+        }
+
+        .footer-nav a {
+            color: var(--light-text);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0.9;
+        }
+        .footer-nav a:hover {
+            opacity: 1;
+            color: var(--accent-color);
+        }
+
+        .footer-contact-info {
+            margin-top: 1em;
+            font-size: 0.95em;
+        }
+
+        .footer-contact-info p {
+            margin: 0.5em 0;
+        }
+
+        .footer-contact-info a {
+            color: var(--light-text);
+            opacity: 0.8;
+        }
+
+        .footer-contact-info a:hover {
+            color: var(--accent-color);
+            opacity: 1;
+        }
+
+        .copyright {
+            margin-top: 1.5em;
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (min-width: 600px) {
+            .hero h1 {
+                font-size: 4.5em;
+            }
+            .hero p {
+                font-size: 1.5em;
+            }
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .services-grid, .features-grid, .reviews-grid, .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            .contact-grid {
+                grid-template-columns: 1fr 1.5fr;
+            }
+            .navbar-toggle {
+                display: none;
+            }
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar .container {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 1em;
+            }
+            .navbar-brand {
+                text-align: left;
+                flex-basis: auto; /* Allow brand to take its natural width */
+            }
+            .navbar-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none; /* Hide by default on mobile */
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                gap: 0;
+            }
+            .nav-links.active {
+                display: flex; /* Show when active */
+            }
+            .nav-links li {
+                width: 100%;
+                padding: 0.8em 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links li:last-child {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links a {
+                display: block;
+                padding: 0.8em 0;
+            }
+            .hero {
+                padding: 6em 1em;
+                min-height: 60vh;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .section-padding {
+                padding: 3em 1em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            .feature-card i {
+                margin-bottom: 0.5em;
+            }
+            .review-card {
+                min-height: auto; 
+            }
+            .footer .container {
+                gap: 1em;
+            }
+            .footer-nav {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero h1 {
+                font-size: 5.5em;
+            }
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .reviews-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/447311345533" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="navbar-brand">Car Repair Mobile Mechanic Birmingham</a>
+            <div class="navbar-toggle" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Expert Mobile Mechanic Services in Birmingham</h1>
+            <p>Your reliable solution for auto repair and maintenance, delivered right to your door.</p>
+            <a href="#contact" class="btn">Book a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- About and Services Section -->
+    <section id="services" class="about-services section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="text-center">Why Choose Car Repair Mobile Mechanic Birmingham?</h2>
+                    <p>At Car Repair Mobile Mechanic Birmingham, we understand the stress of car trouble. That's why we bring expert, reliable auto repair directly to you, saving you time and hassle. Our commitment to transparent service and quality workmanship ensures your vehicle is always in safe hands.</p>
+                    <p>We are a premium auto repair shop serving 4 Southdown Ave, Birmingham B18 5LG, United Kingdom, and the surrounding areas. Our fully qualified mechanics use the latest diagnostic tools to provide top-tier service for all makes and models.</p>
+                    <a href="#contact" class="btn btn-outline">Get a Quote Today</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/featured/900x600/?mechanic,working" alt="Mechanic working on a car engine">
+                </div>
+            </div>
+
+            <h2 class="text-center" style="margin-top: 3em;">Our Comprehensive Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Diagnostic & Repair</h3>
+                    <p>Pinpointing issues quickly and providing efficient, lasting repairs for all vehicle systems.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car-battery"></i>
+                    <h3>Battery Services</h3>
+                    <p>Testing, replacement, and maintenance to keep your car starting reliably every time.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-oil-can"></i>
+                    <h3>Oil Changes & Fluids</h3>
+                    <p>Routine oil changes and fluid checks to ensure your engine runs smoothly and efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tire"></i>
+                    <h3>Tire Services</h3>
+                    <p>Puncture repairs, tire rotations, and replacements for optimal safety and performance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brake-luna"></i>
+                    <h3>Brake Inspections & Repair</h3>
+                    <p>Ensuring your brakes are responsive and safe with thorough checks and quality replacements.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-engine"></i>
+                    <h3>Engine Tune-Ups</h3>
+                    <p>Optimizing engine performance for better fuel economy and a smoother driving experience.</p>
+                </div>
+            </div>
+
+            <div class="certifications section-padding" style="margin-top: 3em; background-color: var(--primary-color);">
+                <h2 style="color: var(--light-text);">Certified Expertise You Can Trust</h2>
+                <div class="certification-grid">
+                    <div class="certification-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Fully Qualified & Insured Mechanics</span>
+                    </div>
+                    <div class="certification-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Latest Diagnostic Technology</span>
+                    </div>
+                    <div class="certification-item">
+                        <i class="fas fa-award"></i>
+                        <span>Guaranteed Workmanship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding">
+        <div class="container text-center">
+            <h2>Our Workshop & Expertise in Action</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/featured/600x400/?car,service,professional" alt="Professional car service in a modern garage">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/featured/600x400/?modern,garage" alt="Interior of a clean, modern auto repair garage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Features Section -->
+    <section id="features" class="features section-padding">
+        <div class="container text-center">
+            <h2>Now Available: Modern Solutions for Your Convenience</h2>
+            <p style="font-size: 1.1em; max-width: 700px; margin: 0 auto 2.5em;">We're constantly enhancing our service to make your car repair experience as seamless and stress-free as possible. Discover our latest features designed with you in mind.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <div>
+                        <h3>Live Chat Support</h3>
+                        <p>Instant visitor support available 24/7. Get your questions answered immediately, any time.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <h3>Online Booking</h3>
+                        <p>Schedule your service appointments directly through our website, at your convenience, without calling.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <h3>AI Assistant</h3>
+                        <p>Our intelligent AI answers common questions automatically, providing quick and accurate information.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h3>AI Voice Agent</h3>
+                        <p>Every call is answered promptly by our AI voice agent, ensuring you never miss an important conversation.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp Integration</h3>
+                        <p>Enjoy instant replies and seamless communication with us directly via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-google"></i>
+                    <div>
+                        <h3>Live Google Reviews</h3>
+                        <p>See what our customers are saying in real-time, with reviews updated automatically on our site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="reviews section-padding">
+        <div class="container text-center">
+            <h2>What Our Birmingham Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Absolutely brilliant service! My car broke down near Broad Street, and they were with me in under an hour. Diagnosed the issue quickly and had me back on the road. Truly a lifesaver!"</p>
+                    <div class="reviewer-name">- Sarah M., Selly Oak</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Had a strange noise from my engine. The mechanic was incredibly thorough, explained everything clearly, and fixed it efficiently. Professional, trustworthy, and great value. Highly recommend!"</p>
+                    <div class="reviewer-name">- David P., Harborne</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"I've used several mobile mechanics before, but Car Repair Mobile Mechanic Birmingham stands out. Their communication was excellent, and the quality of work on my brakes was superb. My go-to from now on."</p>
+                    <div class="reviewer-name">- Fatima A., Aston</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="text-center">Get in Touch or Request a Quote</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Us Directly</h3>
+                    <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+447311345533">+44 7311 345533</a> (Emergency & Enquiries)</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@crmmb.co.uk">contact@crmmb.co.uk</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 4 Southdown Ave, Birmingham B18 5LG, United Kingdom</p>
+                    
+                    <h3 style="margin-top: 2em;">Service Area</h3>
+                    <p>We provide mobile mechanic services throughout Birmingham and the surrounding regions, bringing our expertise directly to your location.</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us an Enquiry</h3>
+                    <form action="#" method="POST"> <!-- In a production setup, this would point to a backend or form service -->
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+44 7XXX XXXXXX">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Emergency Repair / Service Quote" required>
+
+                        <label for="message">Your Message / Service Request</label>
+                        <textarea id="message" name="message" placeholder="Please describe your vehicle's issue or the service you require." required></textarea>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="navbar-brand" style="margin-bottom: 1em;">Car Repair Mobile Mechanic Birmingham</div>
+            <ul class="footer-nav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-contact-info">
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+447311345533">+44 7311 345533</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contact@crmmb.co.uk">contact@crmmb.co.uk</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 4 Southdown Ave, Birmingham B18 5LG, United Kingdom</p>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Car Repair Mobile Mechanic Birmingham. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile nav if open
+                        const navLinks = document.getElementById('navLinks');
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Mobile navigation toggle
+            const navbarToggle = document.getElementById('navbarToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            if (navbarToggle && navLinks) {
+                navbarToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            // Optional: Form submission feedback (client-side only for this single file)
+            const contactForm = document.querySelector('.contact-form form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // In a real application, you'd send this data to a server using fetch API or XMLHttpRequest
+                    // For this single-file HTML, we just show a message and clear the form
+                    alert('Thank you for your enquiry! We will get back to you shortly.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
